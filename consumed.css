@@ -1,0 +1,53 @@
+* {
+  border:none;
+}
+main{
+  max-width: 500px;
+  margin: 10px auto;
+}
+body{
+  background-color:rgba(130, 29, 22, 90%);
+  color:rgb(255,255,255);
+  padding: 50px;
+}
+#borderLine {
+  border:solid 1px white;
+}
+#title {
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  text-align:center;
+  font-size: 3.3rem ;
+  padding-bottom: 0;
+  margin-bottom:20px;
+}
+header h2{
+  font-family: Bookman, URW Bookman L, serif;
+}
+#description {
+  font-family:Bookman, URW Bookman L, serif;
+  text-align:center;
+  padding: 10px;
+  font-size:1.2rem;
+}
+#survey-form {
+  background-color: rgb(130, 29, 22);
+  font-family:Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+label, input[type="email"], input[type="text"], input[type="number"], select, legend, textarea{
+  display:block;
+  width:100%;
+  margin: 5px 0;
+  font-size:1.2rem;
+}
+#submit {
+  margin: 20px auto;
+  padding: 10px;
+  font-size:19px;
+  display: block;
+  width: 80%;
+  background-color: rgb(22, 130, 83);
+  color:white;
+  border: solid 3px white;
+}
