@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="styles.css"/>
+      <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CSS Color Documentation" />
+    <title>CSS Color Documentation</title>
+  </head>
+  <main id="main-doc">
+    <h1 id="CSS_Colors">CSS Colors</h1>
+    <div id="split_flexbox">
+    <nav id="navbar">
+      <header>CSS COLOR DOCUMENTATION</header><hr>
+      <ul>
+        <li><a href="#CSS_Colors" href="default.asp">Home</a></li><hr>
+        <li><a href="#Color_Chart" class="nav-link">Color Chart</a></li><hr>
+        <li><a href="#Color_Extraction_Tools" class="nav-link">Color Extraction Tools</a></li><hr>
+        <li><a href="#RGB_and_RGBa_Colors" class="nav-link">RGB and RGBa Colors</a></li><hr>
+        <li><a href="#Hexidecimal_Colors" class="nav-link">Hexidecimal Colors</a></li><hr>
+        <li><a href="#HSL_and_HSLa_Colors" class="nav-link">HSL and HSLa Colors</a></li><hr>
+</ul>
+    </nav>
+    <div id="color_theory">
+<section id="Color_Chart" class="main-section">
+      <header>Color Chart</header>
+        <p>The CSS color chart provides a standardized framework for incorporating colors into web design, offering a wide range of options for developers. This chart encompasses various methods for color definition, including a set of predefined color names, hexadecimal codes, and two flexible color models: RGB and HSL. Named colors offer an easy way to apply common shades, while hexadecimal values give developers precise control over colors by using a six-digit code.</p>
+        <p>RGB and HSL models further expand color customization capabilities. The RGB model mixes red, green, and blue light at different intensities, each ranging from 0 to 255, allowing for a broad spectrum of colors. Meanwhile, the HSL model enables adjustments based on hue, saturation, and lightness, making it easier to fine-tune color properties such as brightness and intensity for specific design needs.</p>
+        <p>In addition to these color models, CSS also accommodates alpha transparency through RGBA and HSLA values. This feature allows developers to set colors with varying levels of opacity, enhancing the ability to create layered effects and smooth transitions. Overall, the CSS color chart offers a versatile palette that supports both basic and intricate design tasks, enriching the creative process for web development.</p>
+    </section>
+    <section id="Color_Extraction_Tools" class="main-section">
+      <header>Color Extraction Tools
+      </header>
+        <p>The Chrome extension Color Picker is a versatile tool designed to enhance color selection and management directly within your browser. It allows users to effortlessly identify and extract colors from web pages or images with precision. By simply clicking on the extension's icon, users can activate a color picker tool that hovers over any element on the screen, displaying the color values in various formats such as HEX, RGB, or HSL. This functionality is particularly useful for designers and developers who need to match colors or integrate specific hues into their projects.</p>
+        <p>In addition to its core color picking capabilities, the Color Picker extension often includes features like color history and palettes. This allows users to save frequently used colors, organize them into palettes, and quickly access them for future use. Some versions of the extension also offer advanced tools like color analysis and contrast checking, which help ensure accessibility and adherence to design standards.</p>
+        <p>Overall, the Color Picker extension streamlines the process of color selection and integration, making it an invaluable asset for anyone involved in web design or digital graphics. Its ease of use and comprehensive features facilitate precise color matching and efficient workflow, enhancing productivity and creativity in design projects.</p>
+        <p>To download and use the Chrome Color Picker from an image, follow these steps:</p>
+        <ul id="chrome_color_ext">
+          <li>Visit the Chrome Web Store: Open the Chrome browser and navigate to the Chrome Web Store by typing "chrome.google.com/webstore" into the address bar and pressing Enter.</li>
+          <li>Search for the Color Picker Extension: In the search bar of the Chrome Web Store, type "Color Picker" and hit Enter. Look through the search results for an extension that suits your needs, such as "ColorZilla" or "Eye Dropper."</li>
+          <li>Click on the extension you want to download. This will take you to its detail page, where you can read more about its features and check user reviews.</li>
+          <li>Install the Extension: On the extension’s detail page, click the "Add to Chrome" button. A confirmation dialog will appear; click "Add Extension" to begin the installation process.</li>
+          <li>Use the Extension: Once installed, you can find the Color Picker icon in the upper right corner of your Chrome browser. Click on this icon to activate the color picker tool, and follow the instructions provided by the extension to pick colors from images or web pages.</li>
+        </ul>
+    </section>
+
+    <section id="RGB_and_RGBa_Colors" class="main-section">
+      <header>RGB and RGBa Colors</header>
+      <p>RGB (Red, Green, Blue) is a color model used extensively in digital imaging and web design. It creates colors by combining red, green, and blue light at varying intensities. Each color component in the RGB model ranges from 0 to 255, where 0 indicates no intensity and 255 represents full intensity. By adjusting the intensity of these three primary colors, a vast array of colors can be produced. For instance, combining full intensity red (255, 0, 0) with full intensity green (0, 255, 0) creates yellow (255, 255, 0). This model is fundamental in screens and digital displays, as it aligns with how light mixes to produce colors.</p>
+      <code class="code-bit">
+background-color: rgb(255, 99, 71);
+        </code>
+      <p>RGBA extends the RGB model by adding an alpha channel, which controls the color's transparency. The alpha channel also ranges from 0 to 1, where 0 is fully transparent and 1 is fully opaque. This addition allows for more nuanced color applications, such as layering colors or creating effects with varying transparency. For example, RGBA(255, 0, 0, 0.5) represents a semi-transparent red, enabling it to blend with underlying colors or elements on a web page.</p>
+      <p>In practical use, the RGBA model is invaluable for web design and digital art, offering flexibility in creating dynamic visual effects. It allows designers to layer elements, create smooth transitions, and manage how colors interact with backgrounds or other objects. This is particularly useful for implementing features like drop shadows, overlays, and gradient effects that require varying levels of transparency.</p>
+      <p>The RGB model is straightforward and effective for defining colors in solid, opaque formats, making it ideal for scenarios where color accuracy and vividness are essential. On the other hand, RGBA provides additional functionality by incorporating transparency, which is crucial for achieving sophisticated visual designs and enhancing user interfaces.</p>
+      <p>Overall, both RGB and RGBA are fundamental to digital color management, each serving its specific purpose. RGB is primarily used for defining vibrant, solid colors in digital displays, while RGBA offers extended capabilities for transparency and blending effects. Together, they provide a comprehensive toolkit for modern design and development needs.</p>
+          <code class="code-bit">
+background-color: rgba(70, 130, 180, 0.5);
+        </code>
+    </section>
+    
+    <section id="Hexidecimal_Colors" class="main-section">
+      <header>Hexidecimal Colors</header>
+      <p>Hexadecimal color codes are a way to specify colors in web design and digital graphics using a six-character code. This code is composed of three pairs of hexadecimal digits, each representing the intensity of red, green, and blue colors, respectively. The format is #RRGGBB, where RR, GG, and BB are two-digit hexadecimal numbers ranging from 00 to FF. These numbers correspond to decimal values from 0 to 255, which determine the strength of each color component. For instance, the hexadecimal color #FF5733 breaks down into red (FF), green (57), and blue (33), creating a specific shade of orange.</p>
+      <p>The hexadecimal color system allows for precise color definition, enabling designers to achieve exact hues and shades. By combining different values for red, green, and blue, a wide spectrum of colors can be created. For example, #000000 represents black, as all color components are set to their minimum value, while #FFFFFF represents white, with all components set to their maximum value. This method of color specification is both compact and widely supported across web technologies and software applications.</p>
+      <p>One of the advantages of hexadecimal colors is their ease of use and compatibility with various design tools and web standards. They are commonly used in CSS for styling web pages and are easily understood by most graphic design software. Hexadecimal codes provide a standardized way to communicate colors across different platforms, ensuring consistent color representation in digital media.</p>
+      <code class="code-bit">
+background-color: #ff6347;
+background-color: #4682b4;  
+      </code>
+    </section>
+    <section id="HSL_and_HSLa_Colors" class="main-section">
+      <header>HSL and HSLa Colors</header>
+        <p>HSL stands for Hue, Saturation, and Lightness, a color model used to describe colors in a way that aligns with human perception of color attributes. In the HSL model, "Hue" represents the type of color and is measured in degrees around a color wheel, ranging from 0 to 360 degrees. For instance, 0° corresponds to red, 120° to green, and 240° to blue. "Saturation" describes the intensity or purity of the color, with 0% representing a completely desaturated color (gray) and 100% representing full color intensity. "Lightness" indicates the brightness of the color, with 0% being black, 100% being white, and 50% providing the pure color. This model is intuitive as it mirrors how people perceive and adjust colors in real life.</p>
+        <code class="code-bit">
+background-color: hsl(9, 100%, 64%);  
+        </code>
+        <p>HSLA extends the HSL model by incorporating an additional component: Alpha. The Alpha channel represents the color's transparency level and ranges from 0 to 1. A value of 0 means the color is fully transparent, while 1 indicates full opacity. This added dimension allows for more dynamic visual effects, such as overlays and blending, where colors can interact with the underlying elements or backgrounds in a flexible manner.</p>
+        <p>Using HSLA, designers can create colors that blend seamlessly with various layers or backgrounds, making it a powerful tool for web design and digital graphics. For example, HSLA(240, 100%, 50%, 0.5) would produce a semi-transparent shade of blue, where the color's transparency allows for elements underneath to show through slightly. This capability is especially useful for implementing effects like shadows, gradients, or transparent layers, enhancing the visual depth and complexity of web designs.</p>
+        <p>The HSL model provides a more intuitive approach to color selection compared to RGB because it aligns with human perception of colors as hues, saturations, and lightness. Adjusting these components allows designers to easily create harmonious color schemes or modify colors based on visual needs. HSLA builds on this foundation by adding transparency control, enabling further customization and creativity in how colors are applied.</p>
+        <p>Overall, both HSL and HSLA offer valuable methods for color specification and manipulation. HSL simplifies the process of selecting and adjusting colors based on their visual properties, while HSLA enhances this by allowing for transparent and layered color effects. Together, they provide a comprehensive approach to color management in digital design, catering to a wide range of creative requirements.</p>
+        <code class="code-bit">
+background-color: hsla(207, 44%, 49%, 0.5);  
+        </code>
+    </section>
+    </div>
+    </div>
+  </main>
+</html>
