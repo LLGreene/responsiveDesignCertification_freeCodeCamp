@@ -1,0 +1,30 @@
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #90EE90;
+  padding: 12px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: #90EE90;
+  padding: 12px;
+  flex: 50%;
+}
+
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
