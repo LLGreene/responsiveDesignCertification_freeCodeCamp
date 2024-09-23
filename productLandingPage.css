@@ -1,0 +1,272 @@
+/*PALETTE*/
+:root {
+  --ocean:#0077B6;
+  --coral:#FF6F61;
+  --sand:#F2E5D5;
+  --seafoam:#A8E6CE;
+  --sunshine:#FFD60A;
+  --wave:#003B5C;
+}
+/*RESET*/
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  background-color:var(--sand);
+  font-family: 'Rustic Printed', sans-serif;
+  color:var(--ocean);
+}
+html {
+	font-size: 62.5%;
+}
+a {
+  text-decoration:none;
+}
+li {
+  list-style-type:none;
+}
+h1, p {
+  color:var(--wave);
+}
+p {
+  font-size: 1.8rem;
+}
+hr {
+  border: 1.5px solid var(--seafoam);
+  margin:3rem 2rem;
+}
+.header {
+  font-family:'Lobster';
+  font-size:5rem;
+  margin-top:3rem;
+}
+.subheader {
+  font-size:2.5rem;
+  font-family:'Lobster', serif;
+  text-align:center;
+  width: 100vw;
+  margin: 1rem 2rem;
+}
+.labels {
+  color:var(--ocean);
+  margin: 1rem auto;
+  font-size:1.8rem;
+}
+a:hover {
+  color:var(--sunshine);
+}
+/*HEADER*/
+header, #nav-bar-ul {
+  display:flex;
+  flex-direction:row;
+  font-size: 2rem;
+  justify-content:space-evenly;
+}
+header {
+  width: 100vw;
+  padding:2.5rem 5rem 2rem 5rem;
+  position:fixed;
+  z-index:1;
+}
+header, header * {
+  background-color:var(--sunshine);
+}
+#header-img {
+  font-family:'Lobster';
+  width: 50%;
+  color:var(--wave);
+  font-size: 2.5rem;
+}
+#nav-bar {
+  width:50%;
+}
+li a {
+  font-family:'Lobster';
+  color:var(--wave);
+}
+#nav-bar-ul li a:hover {
+  color:var(--ocean);
+  border-bottom:2px solid var(--ocean);
+}
+
+/*OUR BOARDS*/
+#our-boards {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  align-items:center;
+  margin-bottom:2rem;
+  padding-top:11rem;
+}
+.header {
+  margin-bottom:-2rem;
+}
+.seafoam {
+  color:var(--seafoam);
+}
+#video {
+  width: 70%;
+  margin: 4rem 2rem 2rem 2rem;
+}
+#form {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.exit {
+  display:none;
+}
+.form-label {
+    color:var(--coral);
+    font-size:1.4rem;
+    font-weight: 700;
+
+}
+#submit, #email {
+  font-size:1.3rem;
+  padding: 0 1rem;
+  margin:.5rem 0 0 .5rem;
+  font-weight: 600;
+  background-color:var(--sunshine);
+  color:var(--coral);
+  border: 1px solid var(--coral);
+}
+#submit:hover{
+  background-color:var(--coral);
+  color:var(--sunshine);
+}
+/*SHOP BOARDS*/
+
+.product-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+  justify-content:space-evenly;
+  margin: 4rem auto;
+}
+.image-placeholder img {
+  width:28vw;
+}
+/*REVIEWS*/
+.review-list {
+  width:100vw;
+  display:flex;
+  flex-direction:column;
+}
+.review-list li {
+  font-size:1.8rem;
+  font-family: 'Lobster', serif;
+  font-weight:600;
+  margin: 2rem auto;
+  width: 80vw;
+}
+.review-list li:nth-child(even) {
+  text-align:right;
+}
+.review-list li:nth-child(odd) {
+  color:var(--coral);
+}
+
+/*FOOTER*/
+.footer-content {
+  margin:2rem auto;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+footer * {
+  color:var(--wave);
+  font-size:1rem;
+}
+.footer-social, .footer-links, .footer-contact {
+  display:flex;
+  flex-direction:column;
+}
+.footer-bottom {
+  margin:2rem;
+}
+
+/*MEDIA QUERIES*/
+
+/*IPHONE RESPONSIVE*/
+@media (max-width:800px){
+  main {
+    padding-right: 1rem;
+    padding-left:1rem;
+  }
+  #header, .product-container, #form {
+    flex-direction:column;
+  }
+  /*Iphone Header*/
+  header {
+    padding-left:0;
+    margin-left:0;
+    text-align:center;
+
+  }
+  #header-img {
+    font-weight:550;
+  }
+  #header-img, #nav-bar-ul{
+    width: 100vw;
+  }
+  #nav-bar-ul li {
+    font-size:2rem;
+    }
+  /*Iphone Main Email Sign Up*/
+  .exit {
+    text-align:right;
+    padding-right:1rem;
+    display: block;
+  }
+  #form-container {
+    margin:2rem 1rem;
+    border: 2px solid var(--ocean);
+  }
+  #form-container * {
+    color:var(--sand);
+    font-weight:600;
+    font-size:1.3rem;
+    background-color:var(--wave);
+    padding: 0 .4rem;
+  }
+   #email {
+   width:50%;
+   background-color:var(--sand);
+ }
+ #submit{
+   background-color:var(--sunshine);
+   color:var(--coral);
+ }
+ #submit, #email {
+  margin:0rem auto 1rem auto;
+   border-color:var(--sunshine);
+ }
+  /*Iphone Main US Open*/
+  .header{
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+  #video {
+    width: 90vw;
+  }
+  .subheader {
+    font-size: 2.4rem;
+  }
+  /*Iphone Shop Boards*/
+  .image-placeholder img {
+  width:50vw;
+}
+  /*Iphone Footer*/
+  .footer-content {
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    padding: 0 1rem;
+  }
+  .footer-content div {
+    width: 50%;
+    margin-bottom:1rem;
+  }
+  
+} 
